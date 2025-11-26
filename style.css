@@ -59,6 +59,27 @@ section h2 {
   margin-bottom: 10px;
 }
 
+.work-item .description {
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
+
+/* Social section */
+#social ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#social li {
+  margin-bottom: 10px;
+}
+
+.placeholder {
+  color: #999;
+  font-style: italic;
+}
+
 /* iframe をレスポンシブに */
 iframe {
   max-width: 100%;
