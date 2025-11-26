@@ -1,123 +1,55 @@
-/* 全体設定 */
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #1e1e2f; /* 落ち着いた背景色 */
-  color: #f5f5f5;
-  line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sizukuのポートフォリオ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>sizukuのポートフォリオ</h1>
+    <nav>
+      <ul>
+        <li><a href="#works">作品</a></li>
+        <li><a href="#about">自己紹介</a></li>
+        <li><a href="#contact">SNS</a></li>
+      </ul>
+    </nav>
+  </header>
 
-a {
-  color: #4fc3f7;
-  text-decoration: none;
-}
+  <main>
+    <section id="works">
+      <h2>作品</h2>
+      <div class="work-container">
+        <div class="work">
+          <h3>作品1</h3>
+          <iframe src="https://openprocessing.org/sketch/2807528/embed/" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="work">
+          <h3>作品2</h3>
+          <iframe src="https://openprocessing.org/sketch/2807517/embed/" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
 
-a:hover {
-  text-decoration: underline;
-}
+    <section id="about">
+      <h2>自己紹介</h2>
+      <p>こんにちは、sizukuです。プログラミングやデザインが好きで、インタラクティブ作品を制作しています。マウスやキー操作で反応する作品を中心に作っています。</p>
+    </section>
 
-/* ヘッダー */
-header {
-  background-color: #2c2c3c;
-  padding: 20px 0;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-}
+    <section id="contact">
+      <h2>SNS</h2>
+      <ul class="sns-links">
+        <li>Twitter: <span>@xxxx</span></li>
+        <li>YouTube: <span>xxxxチャンネル</span></li>
+        <li>Instagram: <span>@xxxx</span></li>
+      </ul>
+    </section>
+  </main>
 
-header h1 {
-  margin: 0;
-  font-size: 2.5em;
-  color: #ffcc00;
-}
-
-/* ナビゲーション */
-nav {
-  margin-top: 10px;
-}
-
-nav a {
-  margin: 0 15px;
-  font-weight: bold;
-  font-size: 1.1em;
-}
-
-/* セクション */
-section {
-  padding: 60px 20px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-h2 {
-  font-size: 2em;
-  text-align: center;
-  margin-bottom: 20px;
-  color: #ffcc00;
-}
-
-/* 作品 */
-.works-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-}
-
-.work-item {
-  flex: 1 1 45%;
-  min-width: 400px;
-  max-width: 600px;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.work-item h3 {
-  margin-bottom: 15px;
-  font-size: 1.5em;
-  color: #4fc3f7;
-}
-
-/* iframe */
-iframe {
-  width: 100%;
-  height: 750px;
-  border-radius: 10px;
-  border: 2px solid #4fc3f7;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
-}
-
-/* 自己紹介 */
-#about p {
-  max-width: 800px;
-  margin: 0 auto 20px auto;
-  font-size: 1.1em;
-  text-align: center;
-  color: #e0e0e0;
-}
-
-/* SNSリンク（ダミー） */
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
-}
-
-.social-links a {
-  display: inline-block;
-  padding: 10px 15px;
-  background: #2c2c3c;
-  border-radius: 8px;
-  font-weight: bold;
-}
-
-/* フッター */
-footer {
-  text-align: center;
-  padding: 20px 0;
-  background-color: #2c2c3c;
-  margin-top: 40px;
-  color: #888;
-  font-size: 0.9em;
-}
+  <footer>
+    <p>&copy; 2025 sizuku</p>
+  </footer>
+</body>
+</html>
