@@ -1,121 +1,63 @@
-/* リセット */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* 全体設定 */
+/* style.css */
 body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.6;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom right, #f0f4ff, #e0f7ff);
   color: #333;
-  background-color: #fdfdfd;
-  padding: 0 20px;
 }
 
-/* ヘッダー */
 header {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: #fff;
+  padding: 20px;
   text-align: center;
-  padding: 40px 0 20px;
-  background-color: #f0f0f0;
-  border-bottom: 2px solid #ddd;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+  margin: 0 0 10px;
 }
 
 nav a {
+  margin: 0 10px;
+  color: #fff;
   text-decoration: none;
-  color: #333;
   font-weight: bold;
+  transition: 0.3s;
 }
 
 nav a:hover {
-  color: #0077cc;
+  color: #ffdd57;
 }
 
-/* セクション共通 */
 section {
-  max-width: 1200px;
-  margin: 50px auto;
-  padding: 0 20px;
-}
-
-/* About */
-#about p {
-  font-size: 1.2rem;
+  padding: 50px 20px;
   text-align: center;
 }
 
-/* Works */
-#works .work-item {
-  margin-bottom: 60px;
-  text-align: center;
+section#works {
+  background: #f9f9f9;
 }
 
-#works h3 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
+.work {
+  margin: 40px auto;
 }
 
-#works iframe {
-  width: 100%;
-  max-width: 1100px; /* PCでの最大幅 */
-  height: 700px;      /* 高さ大きめ */
-  border: none;
-  border-radius: 8px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+.work iframe {
+  width: 90%;  /* 大きめに調整 */
+  height: 600px; /* 高さも大きめ */
+  border: 3px solid #2575fc;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Contact */
-#contact p {
-  text-align: center;
-  font-size: 1.2rem;
-  color: #555;
+.work iframe:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
-/* Footer */
 footer {
+  background: #2575fc;
+  color: #fff;
+  padding: 20px;
   text-align: center;
-  padding: 30px 0;
-  border-top: 2px solid #ddd;
-  color: #888;
-}
-
-/* レスポンシブ対応 */
-@media (max-width: 1024px) {
-  #works iframe {
-    height: 600px;
-  }
-}
-
-@media (max-width: 768px) {
-  #works iframe {
-    height: 500px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  #works iframe {
-    height: 400px;
-  }
-
-  header h1 {
-    font-size: 2rem;
-  }
 }
