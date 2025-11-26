@@ -3,28 +3,44 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ハンドルネームのポートフォリオ</title>
     <link href="style.css" rel="stylesheet">
-    <title>sizukuのポートフォリオ</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
   </head>
   <body>
-    <h1>sizuku</h1>
+    <h1>ハンドルネーム</h1>
 
     <h2>About</h2>
-    <p>簡単な自己紹介やアピール。<br>どんなことができる、したいのか。</p>
+    <p>
+      簡単な自己紹介やアピール。<br>
+      どんなことができる、したいのか。
+    </p>
 
     <h3>Profile</h3>
     <ul>
       <li>名前（ハンドルネームも可）</li>
-      <li>所在地（県や市まででOK）</li>
-      <li>得意領域（Web開発、サーバ運用など）</li>
+      <li>所在地（県や市までで OK）</li>
+      <li>得意領域（Web 開発、サーバ運用など）</li>
     </ul>
 
     <h3>Skills</h3>
     <table>
-      <tr><th>OS</th><td>Windows, Ubuntuなど</td></tr>
-      <tr><th>Engine, Frameworks</th><td>Node.js, Expressなど</td></tr>
-      <tr><th>Tool, MiddleWare</th><td>Git, PostgreSQLなど</td></tr>
-      <tr><th>資格・免許</th><td>情報処理技術者、LPICなど</td></tr>
+      <tr>
+        <th>OS</th>
+        <td>Windows, Ubuntu など</td>
+      </tr>
+      <tr>
+        <th>Engine, Frameworks</th>
+        <td>Node.js, Express など</td>
+      </tr>
+      <tr>
+        <th>Tool, MiddleWare</th>
+        <td>Git, PostgreSQL など</td>
+      </tr>
+      <tr>
+        <th>資格・免許</th>
+        <td>情報処理技術者、LPIC など</td>
+      </tr>
     </table>
 
     <h3>Works</h3>
@@ -32,13 +48,17 @@
       <li><a href="https://github.com/">GitHub</a></li>
       <li><a href="https://qiita.com/">Qiita</a></li>
       <li><a href="https://zenn.dev/">Zenn</a></li>
-      <li>作った作品
+      <li>
+        作った作品
         <ul>
-          <li><a href="https://example.com/">作品1</a></li>
-          <li><a href="https://example.com/">作品2</a></li>
+          <li><a href="https://example.com/">作品 1</a></li>
+          <li><a href="https://example.com/">作品 2</a></li>
         </ul>
       </li>
     </ul>
+
+    <h3>Open Processing Sketch</h3>
+    <div id="sketch-container"></div>
 
     <h3>Contact</h3>
     <ul>
@@ -49,9 +69,20 @@
 
     <h3>History</h3>
     <table>
-      <tr><th>2019年</th><td><a href="https://dwango.co.jp/">株式会社ドワンゴ</a> 入社</td></tr>
-      <tr><th>2018年</th><td>学校法人角川ドワンゴ学園 <a href="https://nnn.ed.jp/">N高等学校</a> 卒業</td></tr>
-      <tr><th>20XX年</th><td>表彰、受賞歴、メディア掲載記事など</td></tr>
+      <tr>
+        <th>2019 年</th>
+        <td><a href="https://dwango.co.jp/">株式会社ドワンゴ</a> 入社</td>
+      </tr>
+      <tr>
+        <th>2018 年</th>
+        <td>学校法人角川ドワンゴ学園 <a href="https://nnn.ed.jp/">N高等学校</a> 卒業</td>
+      </tr>
+      <tr>
+        <th>20XX 年</th>
+        <td>表彰、受賞歴、メディア掲載記事などあれば</td>
+      </tr>
     </table>
+
+    <script src="sketch.js"></script>
   </body>
 </html>
