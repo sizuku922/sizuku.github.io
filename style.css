@@ -1,44 +1,73 @@
-body {
-    font-family: 'Arial', sans-serif;
+/* 基本リセット */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    box-sizing: border-box;
 }
 
+/* 全体のフォントと背景 */
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ヘッダー */
 header {
-    background-color: #333;
+    background-color: #004aad;
     color: white;
     padding: 20px;
     text-align: center;
 }
 
-header nav ul {
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-header nav ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* セクション */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
 section {
-    padding: 50px;
-    text-align: center;
-}
-
-.work-item {
-    margin: 30px 0;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
+    background-color: white;
     padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    margin-bottom: 15px;
+    color: #004aad;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #004aad;
+    color: white;
+    margin-top: 20px;
+    border-top: 2px solid #00337a;
 }
