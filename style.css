@@ -1,55 +1,105 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>sizukuのポートフォリオ</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>sizukuのポートフォリオ</h1>
-    <nav>
-      <ul>
-        <li><a href="#works">作品</a></li>
-        <li><a href="#about">自己紹介</a></li>
-        <li><a href="#contact">SNS</a></li>
-      </ul>
-    </nav>
-  </header>
+/* リセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <main>
-    <section id="works">
-      <h2>作品</h2>
-      <div class="work-container">
-        <div class="work">
-          <h3>作品1</h3>
-          <iframe src="https://openprocessing.org/sketch/2807528/embed/" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="work">
-          <h3>作品2</h3>
-          <iframe src="https://openprocessing.org/sketch/2807517/embed/" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-    </section>
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  color: #333;
+  line-height: 1.6;
+}
 
-    <section id="about">
-      <h2>自己紹介</h2>
-      <p>こんにちは、sizukuです。プログラミングやデザインが好きで、インタラクティブ作品を制作しています。マウスやキー操作で反応する作品を中心に作っています。</p>
-    </section>
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
 
-    <section id="contact">
-      <h2>SNS</h2>
-      <ul class="sns-links">
-        <li>Twitter: <span>@xxxx</span></li>
-        <li>YouTube: <span>xxxxチャンネル</span></li>
-        <li>Instagram: <span>@xxxx</span></li>
-      </ul>
-    </section>
-  </main>
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
 
-  <footer>
-    <p>&copy; 2025 sizuku</p>
-  </footer>
-</body>
-</html>
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffeb3b;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #222;
+}
+
+.work-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.work {
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.work iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+  border: none;
+}
+
+#about, #contact {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.sns-links {
+  list-style: none;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.sns-links li {
+  margin: 10px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.7);
+  color: #fff;
+}
